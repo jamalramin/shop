@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Nunito;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-image: url(./../images/Capture.PNG);
+    background-size:cover;
+    background-position:right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+button{
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content:space-around;
+    height:90px;
+    width: 100%;
+    background-color: #cfcbd2;
+    align-items: center;
+    opacity:0.8;
+    border-bottom:0.5px solid black;
+}
+
+.header .logo{
+    font-size: x-large;
+}
+
+.header .links a{
+    text-decoration: none;
+    margin: auto 20px;
+    color: black;
+}
+
+.header .links a:hover{
+    transition-duration:1s;
+    border-bottom:  1px solid #000;
+    border-top: 1px solid #000; 
+    color: #000;
+}
+
+.header .buttons button{
+    margin:20px;
+    height: 30px;
+    width: 60px;
+    border-radius:15px;
+    border:none;
+    background-image: linear-gradient(45deg, #f9004d ,#115173);
+    color: white;
+
+}
+
+.buttons button a{
+    color: white;
+    text-decoration: none;
+}
+
+.header .buttons button:hover ,.header .buttons i:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+}
+
+.home{
+    text-align:center;
+    margin-top:60px;
+    color: white;
+    width: 60%;
+}
+
+.home .buttons{
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+}
+
+.home h1{
+    font-size: 45px;
+    font-family:Raleway;
+    font-weight: 100;
+    color:black;
+    padding-top: 100px;
+}
+
+.home .buttons button{
+    margin: 30px;
+    padding: 12px;
+    border-radius:25px;
+    background-color: #e40cc0;
+    border: none;
+}
+
+.home .buttons button:hover{
+    transition-duration: 1s;
+    box-shadow:0 0 20px black , 0 0 20px black;
+    border: 1px solid white;
+}
+
+.home .buttons button a{
+    border: none;
+    color: white;
+}
+
+.content{
+    margin-top: 300px;
+    height:400px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #ffd700,#d43f5a,#00a8cc , #0f4c75);
+    
+    opacity: 0.9;
+}
+
+.content h1{
+    text-align: center;
+    padding-top:30px;
+}
+
+.content h3{
+    text-align: center;
+    color: black;
+}
+
+.content p{
+    margin:0px auto;
+    text-indent:45px;
+    font-size: larger;
+    padding:30px;
+    width: 60%;
+    text-align: center;
+}
+
+.content input{
+    height: 35px;
+    width:300px;
+    border-radius: 20px 0 0 20px ;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 10px;
+    text-align: center;
+    color: black;
+    border:none;
+}
+
+.content i{
+    color: white;
+    text-align: center;
+
+}
+
+.content .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width:25%;
+    border-radius: 20px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+.content .search:hover{
+    box-shadow: 0 0 10px black, 0 0 10px black;
+}
+
+.blouse{
+    height:900px;
+    width: 100%;
+    margin-top: 150px;
+    /* background-image: url(./../images/367744-4k-wallpaper.jpg); */
+    background-image: linear-gradient(45deg,#cb98ed 50%, #8b63da 50%);
+    clip-path: circle(90%);
+    background-size: cover;
+}
+
+.blouse .blouseinfo{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height:300px;
+    width:100%;
+    margin: 60px auto; 
+}
+
+.blouse .blouseinfo div{
+    height: 300px;
+    width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.blouse .blouseinfo div:hover{
+    transition-duration:0.5s;
+    box-shadow: 0 0 20px white , 0 0 20px white;
+    position: relative;
+    bottom: 20px;
+}
+
+.blouse .blouseinfo button:hover{    
+    background-color:#8b63da;
+    color:white;
+    transition-duration: 1s;
+
+}
+
+.blouse .blouseinfo div p{
+    text-align: center;
+    padding-top:5px;
+}
+
+.blouse .blouseinfo button{
+    padding: 7px;
+    border-radius:3px;
+    background-color: #ab60dd;
+    color: white;
+    justify-content: center;
+    border: none;
+    margin:10px 70px;
+}
+
+.blouse .blouseinfo div img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pant{
+    height:900px;
+    width: 100%;
+    background-image: linear-gradient(135deg,#3282b8 50%, #0c7b93 50%);
+    background-size:cover;
+    padding-top: 30px;
+    border-top: 5px solid black;
+}
+
+.pant .pantinfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height:300px;
+    width:100%;
+    margin: 60px auto;
+}
+.pant .pantinfo div{
+    height: 300px;
+    width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    border:1px solid black;
+}
+
+.pant .pantinfo div:hover{
+    transition-duration:0.5s;
+    box-shadow: 0 0 20px white , 0 0 20px white;
+    position: relative;
+    bottom: 20px;
+}
+
+.pant .pantinfo div p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.pant .pantinfo div img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pant .pantinfo button{
+    padding: 7px;
+    border-radius:3px;
+    background-color: #00a8cc;
+    color: white;
+    justify-content: center;
+    border: none;
+    margin:10px 70px;
+    text-transform: capitalize;
+}
+
+.pant .pantinfo button:hover{
+    background-color:#0c7b93;
+    color:white;
+    transition-duration: 1s;
+
+}
+
+.shoes{
+    height:900px;
+    width: 100%;
+    /* background-image: url(./../images/4c7bc943c5076c42a51f67a930eabdc0.jpg); */
+    background-image: linear-gradient(45deg,#115173 50%, #d65a31 50%);
+    border-top: 5px solid black;
+    padding-top: 30px;
+}
+
+.shoes .shoesinfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    height:300px;
+    margin: 60px auto;
+}
+.shoes .shoesinfo div{
+    height: 300px;
+    width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+.shoes .shoesinfo div:hover{
+    box-shadow: 0 0 20px white , 0 0 20px white;
+    transition-duration: 1s;
+    position: relative;
+    bottom: 20px;
+}
+
+.shoes .shoesinfo div p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.shoes .shoesinfo div img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.shoes .shoesinfo button{
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #d65a31;
+    color: white;
+    justify-content: center;
+    border: none;
+    margin:10px 70px;
+    text-transform: capitalize;
+}
+
+.shoes .shoesinfo button:hover{
+    background-color:#115173;
+    color:white;
+    transition-duration: 1s;
+
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height:15px;
+    height: 300px;
+    width: 100%;
+    background-color: #414141;
+    color: white;
+    border-top: 2px dashed black;
+}
+
+.footer .sociallinks div{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: #f9004d;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+.footer .sociallinks div:hover{
+    color: white;
+    background-color: #f9004d;
+    transition-duration: 1s;
+}
+
+.footer .sociallinks{
+    display: flex;
+}
+.footer #up{
+    position: fixed;
+    bottom: 60px;
+    left:1250px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:2px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@300&family=Solway&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@300&family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./style.js" type="text/javascript"></script>
+<head>
+    <title>login form</title>
+    <style>                    
+        body{
+            background-image: linear-gradient(45deg, #cfcbd2, #cb98ed, #8b63da, #3c21b7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family:Raleway;
+        }
+        h2{
+            padding: 8px;
+            text-align: center;
+            font-weight: 800;
+        }         
+        form{
+            height: 400px;
+            width:300px;
+            border:none;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgb(37, 37, 37),0 0 20px rgb(37, 37, 37);
+            padding: 30px 0;
+            background-image: linear-gradient();
+        }
+        .main input{
+            padding: 7px;
+            margin:7px 30px;
+            border-radius:20px;
+            border: none;
+            width:80%;
+        }
+        .main input:hover{
+            background-color: rgb(201, 201, 201);
+        }
+        .main button{
+            background-color: turquoise;
+            padding:7px;
+            margin:7px 30px;
+            border-radius: 17px;
+            border: none;
+            width:80%;
+            margin-top: 20px;
+        }
+        .main p{
+            text-align: center;
+        }
+        .main #forgot{
+            text-decoration: none;
+            color:blue;
+            font-size:13px;
+            position:relative;
+            left:30px;
+        }
+        .main #forgot:hover{
+            text-decoration: underline;
+            color: black;
+            transition-duration: 0.5s;
+        }
+        .main p a{
+            color: blue;
+            text-decoration: none;
+        }
+        .main p a:hover{
+            text-decoration: underline;
+            color: black;
+            transition-duration:0.5s;
+        }
+        p{
+            text-align: center;
+            font-size: 13px;
+            color: white;
+            margin-top:15px;
+            font-weight: 200;
+        }
+        /* this belogns to links */
+        .links{
+            display: flex;
+            justify-content: center;
+            padding-top:20px;
+            color: white;
+        }
+        .links i{
+            margin:0 8px ;
+            font-size:20px;
+        }
+        .links i:hover{
+            color: black;
+            transform: scale(1.1);
+            transition-duration: 1s;
+            text-shadow: 0 0 15px white, 0 0 15px white;
+        }
+        input:nth-child(8){
+            background-color:#ff09d6;
+        }
+        input:nth-child(8):hover{
+            cursor: pointer;
+            box-shadow: 0 0 5px black, 0 0 5px black;
+            background-color:#ff09d6;
+            transition-duration:0.5s;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validate();">
+        <div class="main">
+            <h2>Login</h2>
+            <input type="text" placeholder="Enter your name " id="username" name="username">
+            <br>
+            <input type="password" placeholder="Enter your password" id="userpass" name="password">
+            <br>
+            <a id="forgot" href="#" style="text-indent: 40px;">Forgot password?</a>
+            <br>
+            <input type="submit" value="Login">
+            <p>Already have an account? <a href="#">Sign up</a><br>
+            or contact with</p>
+        </div>
+        <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </form>
+</body>
+</html>
